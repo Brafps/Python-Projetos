@@ -1,8 +1,7 @@
-'''
- Faça um formulário que pergunte o nome, cpf, endereço, idade, altura e telefone.
- Depois imprima isso em um relatório organizado.
-'''
 
+'''
+Variáveis
+'''
 
 nome = input("Escreva seu nome completo:")
 cpf = input("Escreva seu cpf:")
@@ -12,6 +11,11 @@ altura = float(input("Escreva sua altura:"))
 ddd = input("Escreva seu DDD:")
 fone = input("Escreva seu telefone:")
 
+
+
+'''
+Impressão na tela.
+'''
 
 print("Olá, me chamo", nome, "tenho", idade, "de idade e", altura, "de altura.",
 "O número do meu CPF é", cpf,
