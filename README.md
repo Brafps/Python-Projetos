@@ -1,2 +1,2 @@
-# Initial-projects-in-python
+# Python, projetos nível iniciante
 Projetos nível iniciante na linguagem Python
