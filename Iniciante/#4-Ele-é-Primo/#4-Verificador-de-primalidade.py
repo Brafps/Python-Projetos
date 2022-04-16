@@ -6,7 +6,7 @@ num_div = 0
 
 for i in range(1, num +1):
     if (num % i == 0):
-        num_div = num_div +1
+        num_div += 1
 
 if num_div == 2:
     print("O número %d é primo" %num)
