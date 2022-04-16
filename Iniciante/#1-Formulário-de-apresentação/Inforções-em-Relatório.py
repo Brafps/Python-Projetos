@@ -17,7 +17,5 @@ fone = input("Escreva seu telefone:")
 Impressão na tela.
 '''
 
-print("Olá, me chamo", nome, "tenho", idade, "de idade e", altura, "de altura.",
-"O número do meu CPF é", cpf,
-"e minha residência fica na "+end+". Para entrar em contato comigo, basta ligar para o número: ("+ddd+")", fone, "que também é zap")
+print("\n Olá, me chamo {nm}, tenho {idd} de idade e {alt} de altura. O número do meu CPF é {cpf} e minha residência fica na {end}. Para entrar em contato comigo, basta ligar para o número ({ddd}) {fn} que também é zap." .format(nm=nome, idd=idade, end=end, alt=altura, cpf=cpf, ddd=ddd, fn=fone))
 

@@ -4,4 +4,4 @@
 
 ## Conhecimentos aplicados
 
-### Aqui fazemos o uso de entrada, saída de dados, mudança de tipo de variáveis e uso dos comandos: while e for.
+### Aqui fazemos uso de entrada e saída de dados, mudança de tipo de variáveis e uso dos comandos: while e for.
