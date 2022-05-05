@@ -2,6 +2,7 @@
 Definindo funções e métodos para usar na calculadora
 '''
 
+#Vefificador de núemros inteiros
 def verificadorInt(men):
     b_ok = False
     i_valor = 0
@@ -15,3 +16,15 @@ def verificadorInt(men):
         if b_ok:
             break
     return i_valor
+
+#Verificador de primalidade de número
+def testPrimo(num):
+    num_div = 0
+    for i in range(1, num +1):
+        if (num % i == 0):
+            num_div += 1
+    if num_div == 2:
+        return print("O número %d é primo" %num)
+    else:
+        return print("O número %d não é primo" %num)
+
