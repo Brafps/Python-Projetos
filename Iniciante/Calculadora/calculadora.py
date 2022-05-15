@@ -31,7 +31,7 @@ print("5 - Média Aritmética")
 
 while True:
     operação = int(input("Qual operação deseja?\n"))
-    if operação > 0 and operação < 5:
+    if operação > 0 and operação <= 5:
         break
     else:
         print("Você não digitou uma operação válida!\n")
@@ -55,8 +55,8 @@ elif (operação == 4):
     print("\n {} / {} = {}".format(i_num_1, i_num_2, div(i_num_1, i_num_2)))
 elif (operação == 5):
     while True:
-        contador = 1
-        soma += int(input("Digite o # {} número".format(contador)))
+        contador += 1
+        f_soma += float(input("Digite o # {} número".format(contador)))
         
 else:
     print("Você digitou uma operação inválida!")
