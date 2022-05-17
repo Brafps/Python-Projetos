@@ -1,64 +1,50 @@
 # Definição de operações
 
-def soma(a,b):
-    return a+b
+def soma():
+    lista = []
+    contador = 1
+    while True:    
+            f_num_flash = input(f"Digite o #{contador} número ou S para sair desse menu:")
+            if f_num_flash == ("s" or "S"):
+                break
+            elif f_num_flash.isnumeric():
+                lista.append(float(f_num_flash))
+                contador += 1
 
-def sub(a, b):
-    return a-b
+            else:
+                print("\033[0;31m Erro! Digite um valor de operação válido.\033[m")
+    return print("A Soma dos números digitados é igual a: %f\n" %sum(lista))
 
-def mult(a, b):
-    return a*b
-
-def div(a, b):
-    return a/b
-
-def media(lista):
-    soma = sum(lista)
-    tamanho = len(lista)
-    return soma/tamanho
-
-
-
+# Tela FIxa
 
 print("~~~~~~ Calculadora em Python ~~~~~~\n")
 
-print("Abaixo, digite o valor da operação correspondente.\n ")
-print("1 - soma")
-print("2 - subtração")
-print("3 - multiplicação")
-print("4 - divisão\n")
-print("5 - Média Aritmética")
+print("Abaixo, digite o valor da operação correspondente. ")
 
 while True:
-    operação = int(input("Qual operação deseja?\n"))
-    if operação > 0 and operação <= 5:
-        break
-    else:
-        print("Você não digitou uma operação válida!\n")
+    print('''[1] - Soma
+[2] - Subtração
+[3] - Multiplicação
+[4] - Divisão
+[5] - Média Aritmética
+[6] - Média Ponderada
+[0] - Encerrar''')
 
-
-if (operação == 1):
-    i_num_1 = int(input("Digite o primeiro número:"))
-    i_num_2 = int(input("Digite o segundo número:"))
-    print("\n {} + {} = {}".format(i_num_1, i_num_2, soma(i_num_1, i_num_2)))
-elif (operação == 2):
-    i_num_1 = int(input("Digite o primeiro número:"))
-    i_num_2 = int(input("Digite o segundo número:"))
-    print("\n {} - {} = {}".format(i_num_1, i_num_2, sub(i_num_1, i_num_2)))
-elif (operação == 3):
-    i_num_1 = int(input("Digite o primeiro número:"))
-    i_num_2 = int(input("Digite o segundo número:"))
-    print("\n {} * {} = {}".format(i_num_1, i_num_2, mult(i_num_1, i_num_2)))
-elif (operação == 4):
-    i_num_1 = int(input("Digite o primeiro número:"))
-    i_num_2 = int(input("Digite o segundo número:"))
-    print("\n {} / {} = {}".format(i_num_1, i_num_2, div(i_num_1, i_num_2)))
-elif (operação == 5):
     while True:
-        contador += 1
-        f_soma += float(input("Digite o # {} número".format(contador)))
+        operação = int(input("\nQual operação deseja?\n"))
+        if operação >= 0 and operação <= 9:
+            break
+        else:
+            print("\033[0;31m Erro! Digite um valor de operação válido.\033[m")
+# Condições
+
+    if (operação == 1):
+        soma()
+
+# Condição para finalizar o programa 
         
-else:
-    print("Você digitou uma operação inválida!")
-
-
+    
+    elif (operação == 0):
+        print("Finalizando...")
+        break
+ 
