@@ -1,9 +1,3 @@
-'''
-Depósito
-else:
-    print("\033[0;31m Erro! Digite um valor de operação válido.\033[m")
-print("---------------------------------------------------\nA Soma dos números digitados é igual a: %f\n" %sum(l_lista))    
-'''
 # Definição de operações
 
 def soma():
