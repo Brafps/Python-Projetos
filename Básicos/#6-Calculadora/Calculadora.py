@@ -23,6 +23,7 @@ print("3 - multiplicação")
 print("4 - divisão\n")
 
 
+
 # Verificador da operação digitada
 
 while True:
@@ -46,5 +47,5 @@ elif (operação == 2):
     print("\n {} - {} = {}".format(i_num_1, i_num_2, sub(i_num_1, i_num_2)))
 elif (operação == 3):
     print("\n {} * {} = {}".format(i_num_1, i_num_2, mult(i_num_1, i_num_2)))
-else:
+elif (operação == 4):
     print("\n {} / {} = {}".format(i_num_1, i_num_2, div(i_num_1, i_num_2)))
